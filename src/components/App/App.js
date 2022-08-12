@@ -18,15 +18,7 @@ class App extends Component{
      }
   }
 
-  startGame = (numTiles) => {
-    this.setState((state) => ({
-      playing: true,
-      previousTileIndex: null,
-      toBeCleared: null,
-      tiles: createTiles(state.numTiles, this.handleTileClicked)
-    }))
-  }
-
+ 
   handleTileClicked = (id, color)  => {
      this.setState((state) => {
        const tiles = state.tiles;
@@ -61,6 +53,16 @@ class App extends Component{
        return {toBeCleared, tiles, previousTileIndex}
      })
   }
+
+  startGame = (numTiles) => {
+    this.setState((state) => ({
+      playing: true,
+      previousTileIndex: null,
+      toBeCleared: null,
+      tiles: createTiles(state.numTiles, this.handleTileClicked)
+    }))
+  }
+
 
   render() {
    return (
