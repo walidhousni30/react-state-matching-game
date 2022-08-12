@@ -18,6 +18,14 @@ class App extends Component{
      }
   }
 
+  handleNumTileChange = (num) => {
+    this.setState({
+      numTiles: num,
+      playing: false,
+      tiles: []
+    })
+}
+
  
   handleTileClicked = (id, color)  => {
      this.setState((state) => {
@@ -63,13 +71,7 @@ class App extends Component{
     }))
   }
 
-  handleNumTileChange = (num) => {
-      this.setState({
-        numTiles: num,
-        playing: false,
-        tiles: []
-      })
-  }
+
 
 
   render() {
