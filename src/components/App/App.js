@@ -57,6 +57,8 @@ class App extends Component{
        } else {
         previousTileIndex = selectedTileIndex
        }
+
+       return {toBeCleared, tiles, previousTileIndex}
      })
   }
 
