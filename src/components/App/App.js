@@ -28,7 +28,6 @@ class App extends Component{
   }
 
   render() {
-    const {  playing, numTiles, tiles } = this.state
    return (
     <div className="App">
       <header className="App-header">
