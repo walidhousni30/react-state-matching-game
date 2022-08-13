@@ -23,7 +23,7 @@ const TileSelector = (props) => {
    <div className='tileSelector'>
      <div>Number of Tiles</div>
      <div ref={ref} className='tileSelectorDropdown'>
-      {props.numTiles}
+      {numTiles}
        {dropdown}
      </div>
    </div>
